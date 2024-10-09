@@ -1,0 +1,59 @@
+/* Style the main header */
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the main navigation */
+nav {
+  background-color: lightpink;
+  overflow: hidden;
+}
+
+/* Style the navigation links */
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style the navigation links on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: cornflowerblue;
+}
+
+/* Style the main content area */
+main {
+  padding: 20px;
+}
+
+/* Style the main footer */
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the article element */
+article {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style the aside element */
+aside {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style the section element */
+section {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,50 @@
+.grid-container{
+display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'nav main main main main aside' 
+    'footer footer footer footer footer footer';
+}
+header{
+  grid-area: header;
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+}
+nav,
+main,
+aside{
+  padding: 10px;
+  height: 300px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: gray;
+  padding: 10px;
+  text-align: center;
+}
+
+
+main {
+  grid-area: main;
+  background-color: purple;
+  padding: 10px;
+  text-align: center;
+}
+
+
+aside {
+  grid-area: aside;
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+
+footer {
+  grid-area: footer;
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+}
