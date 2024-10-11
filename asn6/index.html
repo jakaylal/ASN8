@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Misc. Information</legend>
+        <label for="name">Please enter your Name:</label><br>
+          <input type="text" id="name" name="name"><br><br>
+          <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      <br>
+      <label for="radio">Choose your favorite food:</label>
+      <br>
+        <input type="radio" id="pizza" name="fav_food" value="Pizza">
+          <label for="pizza">Pizza</label><br>
+          <input type="radio" id="tacos" name="fav_food" value="Tacos">
+          <label for="tacos">Tacos</label><br>
+          <input type="radio" id="ramen" name="fav_food" value="Ramen">
+          <label for="ramen">Ramen</label>
+      <br>
+      <label for="movies">Choose a movie:</label>
+      <select id="movies" name="movies">
+        <option value="Perfect Blue">Perfect Blue</option>
+        <option value="Spirited Away">Spirited Away</option>
+        <option value="Belle" selected>Belle</option>
+        <option value="A Silent Voice">A Silent Voice</option>
+      </select>
+      <input type="submit">
+      <br>
+      <label for="name">Pick your favorite anime:</label>
+      <br>
+         <input type="checkbox" id="anime1" name="anime1" value="Ao Haru Ride">
+          <label for="anime1">Ao Haru Ride</label><br>
+          <input type="checkbox" id="anime2" name="anime2" value="Skip Beat">
+          <label for="anime2">Skip Beat</label><br>
+          <input type="checkbox" id="anime3" name="anime3" value="Maid Sama">
+          <label for="anime3">Maid Sama</label>
+      <br>
+         <label for="favcolor">Select your favorite color:</label>
+          <input type="color" id="favcolor" name="favcolor">
+      <br>
+        <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email">
+      <br>
+        <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile">
+      <br>
+        <label for="vol">Volume (between 0 and 50):</label>
+          <input type="range" id="vol" name="vol" min="0" max="50">
+      <br>
+        <label for="pwd">Password:</label><br>
+          <input type="password" id="pwd" name="pwd">
+      <br>
+      <label for="bio">Please enter a short bio about yourself:</label><br>
+      <textarea name="message" rows="10" cols="30">
+        Enter here...
+        </textarea>
+    </fieldset>
+   
+
+
+</form>
+</body>
+</html>
