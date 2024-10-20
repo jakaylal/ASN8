@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 6</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+      function getOption() {
+        var obj = document.getElementById("mySelect");
+        document.getElementById("demo").innerHTML = 
+        obj.options[obj.selectedIndex].text;
+      }
+      function getAllOptions(){
+        var obj = document.getEelementById("formoptions");
+        document.getElectmentByID("demo").innerHTML 
+        obj.options[obj.selectedIndex].text;
+      }
+      </script>
+
+
+
+
+
+      <br><br>
+
+
+
+
 </head>
 <body>
-<form action="/action_page.php">
-    <fieldset>
+  <form id="formoptions">
+<fieldset>
+
+      <fieldset action="/action_page.php">
+        <!--displaying the time-->
+        <p>Click the button to display the date.</p>
+        <button onclick="displayDate()">The time is?</button>
+        <script>
+        function displayDate() {
+          document.getElementById("demo").innerHTML = Date();
+        }
+        </script>
+        <p id="demo"></p>
+
+        <br><br>
+
         <legend>Misc. Information</legend>
         <label for="name">Please enter your Name:</label><br>
           <input type="text" id="name" name="name"><br><br>
@@ -23,25 +60,41 @@
           <label for="tacos">Tacos</label><br>
           <input type="radio" id="ramen" name="fav_food" value="Ramen">
           <label for="ramen">Ramen</label>
-      <br>
+
+
+
+
+
+      <br><br>
+
+
+  <select id="mySelect">
       <label for="movies">Choose a movie:</label>
-      <select id="movies" name="movies">
         <option value="Perfect Blue">Perfect Blue</option>
         <option value="Spirited Away">Spirited Away</option>
         <option value="Belle" selected>Belle</option>
         <option value="A Silent Voice">A Silent Voice</option>
       </select>
-      <input type="submit">
-      <br>
+      <input type="button" onclick="getOption()" value="Click Me!">
+
+
+      <p id="demo"></p>
+      <br><br>
+
       <label for="name">Pick your favorite anime:</label>
       <br>
+
          <input type="checkbox" id="anime1" name="anime1" value="Ao Haru Ride">
           <label for="anime1">Ao Haru Ride</label><br>
           <input type="checkbox" id="anime2" name="anime2" value="Skip Beat">
           <label for="anime2">Skip Beat</label><br>
           <input type="checkbox" id="anime3" name="anime3" value="Maid Sama">
           <label for="anime3">Maid Sama</label>
+
+
       <br>
+
+
          <label for="favcolor">Select your favorite color:</label>
           <input type="color" id="favcolor" name="favcolor">
       <br>
@@ -61,8 +114,15 @@
       <textarea name="message" rows="10" cols="30">
         Enter here...
         </textarea>
-    </fieldset>
-   
+        <input type="button" onclick="getAllOptions()" value="Click Me!">
+          <p id="demo"></p>
+
+
+        </fieldset>
+
+
+
+
 
 
 </form>
