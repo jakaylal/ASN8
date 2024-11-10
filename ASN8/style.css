@@ -1,0 +1,74 @@
+ul {
+  list-style-type: none;
+}
+body {
+  display: grid;
+  grid-template-areas: 
+      'header header header'
+      'nav main aside'
+      'footer footer footer';
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+header{
+  grid-area: header;
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+}
+nav,
+main,
+aside{
+  padding: 10px;
+  height: 300px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: gray;
+  padding: 10px;
+  text-align: center;
+}
+
+
+main {
+  grid-area: main;
+  background-color: purple;
+  padding: 10px;
+  text-align: center;
+}
+
+
+aside {
+  grid-area: aside;
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+
+footer {
+  grid-area: footer;
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    color: white;
+  }
+}
